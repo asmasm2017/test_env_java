@@ -1,0 +1,9 @@
+Dear receiver,
+I use java for the solution for some reasons:
+1. I am not familiar with golang.
+2. I think I can not use springboot and map every json entity to corresponding "pre defined" class due
+   to requirement "the solution should be flexible for any yaml files".
+3. Junit used in this project will assert if returned object of this "core" function is JSONObject.
+4. I assume that for each field defined in yaml , if no environment variable match with the field, then
+   Json result will display original text such :
+   "client"=${$SQL_CLIENT}
